@@ -1,0 +1,11 @@
+package sim;
+
+public class Subscriber implements IProductAttribute {
+
+	@Override
+	public boolean update() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

@@ -1,0 +1,12 @@
+package sim;
+
+public class Product {
+	private int productID;
+	private boolean hasChange;
+	
+	
+	private boolean updateAttributes(){
+		
+		return false;
+	}
+}

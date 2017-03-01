@@ -1,0 +1,5 @@
+package sim;
+
+public enum EntryTypes {
+	FLIGHT_TYPE, PRODUCT_CONFIGURATION, PRE_FLIGHT, FLIGHT_PHASE, FLIGHT_PARAMETER;
+}

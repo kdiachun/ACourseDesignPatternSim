@@ -1,0 +1,36 @@
+package sim;
+
+public class FlightTestEntryFactory {
+	
+	
+	public FlightTestEntry createFlightTestEntry(String input){
+		//FlightTestEntry entry = null;
+		String typeString = input.split("[\\[\\]]")[1];
+		
+		switch(typeString){
+			case "FLIGHT_TYPE":
+				String flightType = input.split("=")[1];
+				return new DescriptiveTestEntry(EntryTypes.FLIGHT_TYPE, flightType);
+			case "PRODUCT CONFIGURATION":
+				String configType = input.split("=")[1];
+				return new DescriptiveTestEntry(EntryTypes.PRODUCT_CONFIGURATION, configType);
+			case "PRE_FLIGHT":
+				String temp = input.split("=")[1];
+				String param = temp.split(":")[0];
+				double val = Double.parseDouble(temp.split(":")[1]);
+				return new ParameterTestEntry(EntryTypes.PRE_FLIGHT, param, val);
+			case "FLIGHT_PHASE":
+				String flightPhase = input.split("=")[1];
+				return new DescriptiveTestEntry(EntryTypes.PRODUCT_CONFIGURATION, flightPhase);
+			case "FLIGHT_PARAMETER":
+				
+				break;
+			//TODO: handle other inputs
+		}
+		
+		
+		return null;
+	}
+	
+	
+}

@@ -1,0 +1,21 @@
+package sim;
+
+public class DescriptiveTestEntry extends FlightTestEntry {
+
+	private String description;
+	
+	public DescriptiveTestEntry(EntryTypes type, String suffix, String Description){
+		
+	}
+	
+	
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	
+}

@@ -1,0 +1,47 @@
+package sim.flightTestEntry;
+
+import sim.DescriptiveTestEntry;
+import sim.ParameterTestEntry;
+import sim.enums.EntryTypes;
+
+public class FlightTestEntryFactory {
+	
+	
+	public FlightTestEntry createFlightTestEntry(String input){
+		//FlightTestEntry entry = null;
+		String typeString = input.split("[\\[\\]]")[1];
+		
+		String temp;
+		String flightType;
+		String configType;
+		String flightPhase;
+		String param;
+		double val;
+		
+		switch(typeString){
+			case "FLIGHT_TYPE":
+				flightType = input.split("=")[1];
+				return new DescriptiveTestEntry(EntryTypes.FLIGHT_TYPE, flightType);
+			case "PRODUCT CONFIGURATION":
+				configType = input.split("=")[1];
+				return new DescriptiveTestEntry(EntryTypes.PRODUCT_CONFIGURATION, configType);
+			case "PRE_FLIGHT":
+				temp = input.split("=")[1];
+				param = temp.split(":")[0];
+				val = Double.parseDouble(temp.split(":")[1]);
+				return new ParameterTestEntry(EntryTypes.PRE_FLIGHT, param, val);
+			case "FLIGHT_PHASE":
+				flightPhase = input.split("=")[1];
+				return new DescriptiveTestEntry(EntryTypes.PRODUCT_CONFIGURATION, flightPhase);
+			case "FLIGHT_PARAMETER":
+				temp = input.split("=")[1];
+				param = temp.split(":")[0];
+				val = Double.parseDouble(temp.split(":")[1]);
+				return new ParameterTestEntry(EntryTypes.PRE_FLIGHT, param, val);
+			//TODO: handle other inputs
+		}
+		return null;
+	}
+	
+	
+}

@@ -1,0 +1,29 @@
+package sim;
+
+public class FlightTestEntry {
+
+	private EntryTypes entryType;
+	private String suffix;
+	
+	public FlightTestEntry(EntryTypes type, String suf){
+		entryType = type;
+		suffix = suf;
+	}
+	
+	
+	public String getSuffix() {
+		return suffix;
+	}
+
+	public void setSuffix(String suffix) {
+		this.suffix = suffix;
+	}
+
+	public EntryTypes getEntryType() {
+		return entryType;
+	}
+	
+	public void setEntryType(EntryTypes entryType) {
+		this.entryType = entryType;
+	}
+}

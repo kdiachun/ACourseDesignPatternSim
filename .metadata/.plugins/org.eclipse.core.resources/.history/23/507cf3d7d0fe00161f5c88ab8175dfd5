@@ -1,0 +1,9 @@
+package sim;
+
+public class Aircraft {
+
+	
+	public void simulate(){
+		
+	}
+}

@@ -1,0 +1,19 @@
+package sim;
+
+public class Publisher implements IProductAttribute {
+	
+	String name;
+	AttributeType type;
+	int max;
+	int min;
+	int default_val;
+	int value;
+	
+	
+	@Override
+	public boolean update() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

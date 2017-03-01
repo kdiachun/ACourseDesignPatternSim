@@ -1,0 +1,22 @@
+package sim;
+
+public class FlightTest {
+	
+	
+	public void importFlightTestFile(String filename){
+		
+	}
+	
+	public void importOConfigFile(String filename){
+				
+	}
+	
+	public void updateFlightParameters(){
+		
+	}
+	
+	public void simulateNextFlightPhase(){
+				
+	}	
+	
+}

@@ -1,0 +1,35 @@
+package sim;
+
+public class FlightTestEntryFactory {
+	
+	
+	public FlightTestEntry createFlightTestEntry(String input){
+		//FlightTestEntry entry = null;
+		input = "[FLIGHT_TYPE]=DOMESTIC";
+		String typeString = input.split("[\\[\\]]")[1];
+		
+		switch(typeString){
+			case "FLIGHT_TYPE":
+				
+				break;
+			case "PRODUCT CONFIGURATION":
+				
+				break;
+			case "PRE_FLIGHT":
+				
+				break;
+			case "FLIGHT_PHASE":
+				
+				break;
+			case "FLIGHT_PARAMETER":
+				
+				break;
+			//TODO: handle other inputs
+		}
+		
+		
+		return null;
+	}
+	
+	
+}

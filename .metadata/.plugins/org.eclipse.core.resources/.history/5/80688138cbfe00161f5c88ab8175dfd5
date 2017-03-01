@@ -1,0 +1,27 @@
+package sim;
+
+public class FlightTestEntry {
+	
+	enum EntryTypes {
+		FLIGHT_TYPE, PRODUCT_CONFIGURATION, PRE_FLIGHT, FLIGHT_PHASE, FLIGHT_PARAMETER;
+	}
+	
+	private EntryTypes entryType;
+	private String suffix;
+	
+	public String getSuffix() {
+		return suffix;
+	}
+
+	public void setSuffix(String suffix) {
+		this.suffix = suffix;
+	}
+
+	public EntryTypes getEntryType() {
+		return entryType;
+	}
+	
+	public void setEntryType(EntryTypes entryType) {
+		this.entryType = entryType;
+	}
+}

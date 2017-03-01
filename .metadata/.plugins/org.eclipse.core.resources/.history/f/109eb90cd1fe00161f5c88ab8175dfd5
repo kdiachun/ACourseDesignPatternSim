@@ -1,0 +1,29 @@
+package sim;
+
+import java.util.ArrayList;
+
+public class FlightTest {
+	
+	ArrayList<FlightTestEntry> testEntries;
+	ArrayList<ParameterTestEntry> currentPhaseParameters;
+	ArrayList<ParameterTestEntry> preFlightParameters;
+	Aircraft aircraft;
+	
+	
+	public void importFlightTestFile(String filename){
+		
+	}
+	
+	public void importOConfigFile(String filename){
+				
+	}
+	
+	public void updateFlightParameters(){
+		
+	}
+	
+	public void simulateNextFlightPhase(){
+				
+	}	
+	
+}

@@ -1,0 +1,12 @@
+package sim;
+
+import org.w3c.dom.Element;
+
+public class AttributeFactory {
+
+	public IProductAttribute createAttribute(Element xmlElement){
+		
+		return null;
+	}
+	
+}

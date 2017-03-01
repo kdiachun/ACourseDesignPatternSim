@@ -1,0 +1,14 @@
+package sim;
+
+public class FlightTestEntryFactory {
+	
+	
+	public FlightTestEntry createFlightTestEntry(String input){
+		
+		
+		
+		return null;
+	}
+	
+	
+}
