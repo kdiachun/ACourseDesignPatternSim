@@ -1,0 +1,28 @@
+package classExample;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class mainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Customer> customers = new ArrayList<Customer>();
+		
+		customers.add(CustomerFactory.createCustomer("BIZJET:Fancy Company"));
+		customers.add(CustomerFactory.createCustomer("MILITARY:France Air Force"));
+		customers.add(CustomerFactory.createCustomer("CIVIL:Boeing"));
+		customers.add(CustomerFactory.createCustomer("CIVIL:Airbus"));
+		customers.add(CustomerFactory.createCustomer("BIZJET:Rich Man"));
+		customers.add(CustomerFactory.createCustomer("MILITARY:USAF"));
+		customers.add(CustomerFactory.createCustomer("MILITARY:Canadian Royal Air Force"));
+		customers.add(CustomerFactory.createCustomer("CIVIL:Southwest Airlines"));
+		
+		Iterator<Customer> iter = customers.iterator();
+		while(iter.hasNext()){
+			iter.next().printCustomer();
+		}
+		
+	}v
+
+}

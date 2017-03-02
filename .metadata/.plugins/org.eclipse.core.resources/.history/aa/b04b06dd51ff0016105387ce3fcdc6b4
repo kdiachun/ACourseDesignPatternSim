@@ -1,0 +1,11 @@
+package classExample;
+
+public class CivilCustomer implements Customer {
+
+	@Override
+	public void printCustomer() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

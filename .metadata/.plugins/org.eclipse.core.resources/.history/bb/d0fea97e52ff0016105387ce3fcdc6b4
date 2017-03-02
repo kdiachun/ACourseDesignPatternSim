@@ -1,0 +1,10 @@
+package classExample;
+
+public class BizJetCustomer implements Customer {
+
+	@Override
+	public void printCustomer() {
+		System.out.println("BizJet Customer");
+	}
+
+}

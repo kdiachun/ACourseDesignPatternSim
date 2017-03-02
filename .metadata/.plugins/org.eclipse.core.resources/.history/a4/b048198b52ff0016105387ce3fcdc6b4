@@ -1,0 +1,10 @@
+package classExample;
+
+public class CustomerFactory {
+	public Customer createCustomer(String customerSpec){
+		
+		
+		
+		return null;
+	}
+}

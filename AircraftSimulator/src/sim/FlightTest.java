@@ -10,7 +10,11 @@ public class FlightTest {
 	ArrayList<FlightTestEntry> testEntries;
 	ArrayList<ParameterTestEntry> currentPhaseParameters;
 	ArrayList<ParameterTestEntry> preFlightParameters;
-	Aircraft aircraft;
+	Aircraft aircraft; 
+	
+	public FlightTest(){
+		aircraft = new Aircraft();
+	}
 	
 	
 	public void importFlightTestFile(String filename){

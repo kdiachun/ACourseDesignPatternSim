@@ -1,0 +1,23 @@
+package classExample;
+
+public class CustomerFactory {
+	public Customer createCustomer(String customerSpec){
+		//String format:
+		//MILITARY:CompanyName
+		//CIVIL:CompanyName
+		//BIZJET:CompanyName
+		
+		String type = customerSpec.split(":")[0];
+		String name = customerSpec.split(":")[1];
+		
+		switch(type){
+		case "MILITARY":
+			return new MilitaryCustomer(name);
+		case "CIVIL":
+			return new CivilCustomer(name);
+		case "BIZJET":
+			return new BizJetCustomer(name);
+		}
+		return null;
+	}
+}

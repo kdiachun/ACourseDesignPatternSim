@@ -1,0 +1,10 @@
+package classExample;
+
+public class MilitaryCustomer implements Customer {
+
+	@Override
+	public void printCustomer() {
+		System.out.println("Military Customer");
+	}
+
+}

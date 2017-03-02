@@ -1,0 +1,19 @@
+package sim;
+
+import java.util.ArrayList;
+
+public class Aircraft {
+	
+	ArrayList<Product> products;
+	
+	public void simulate(){
+		boolean hasChange = false;
+		while(!hasChange){
+			for(Product prod : products){
+				prod.updateAttributes();
+				
+			}
+		}
+		
+	}
+}

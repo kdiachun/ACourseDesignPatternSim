@@ -1,0 +1,5 @@
+package classExample;
+
+public interface Customer {
+
+}

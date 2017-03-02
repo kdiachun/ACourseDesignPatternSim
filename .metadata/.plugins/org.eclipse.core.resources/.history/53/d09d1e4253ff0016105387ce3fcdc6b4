@@ -1,0 +1,29 @@
+package classExample;
+
+import java.util.ArrayList;
+
+public class mainClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Customer> customers = new ArrayList<Customer>();
+		
+		
+		
+		customers.add(CustomerFactory.createCustomer("BIZJET:FancyCompany"));
+		customers.add(CustomerFactory.createCustomer("MILITARY:FranceAirForce"));
+		customers.add(CustomerFactory.createCustomer("CIVIL:Boeing"));
+		customers.add(CustomerFactory.createCustomer("CIVIL:Airbus"));
+		customers.add(CustomerFactory.createCustomer("BIZJET:RichMan"));
+		customers.add(CustomerFactory.createCustomer("MILITARY:USAF"));
+		customers.add(CustomerFactory.createCustomer("MILITARY:CanadianRoyalAirForce"));
+		customers.add(CustomerFactory.createCustomer("CIVIL:Southwest Airlines"));
+		
+		
+		for(Customer cust: customers){
+			cust.printCustomer();
+		}
+		
+	}
+
+}

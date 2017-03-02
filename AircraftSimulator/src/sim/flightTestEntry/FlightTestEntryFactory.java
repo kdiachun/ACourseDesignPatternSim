@@ -5,7 +5,7 @@ import sim.enums.EntryTypes;
 public class FlightTestEntryFactory {
 	
 	
-	public FlightTestEntry createFlightTestEntry(String input){
+	public FlightTestEntry createFlightTestEntry(String input){ //FACTORRRYYYYYYYYY
 		//FlightTestEntry entry = null;
 		String typeString = input.split("[\\[\\]]")[1];
 		

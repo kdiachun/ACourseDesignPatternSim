@@ -1,0 +1,6 @@
+package classExample;
+
+public interface Customer {
+	public void printCustomer();
+	String getType();
+}

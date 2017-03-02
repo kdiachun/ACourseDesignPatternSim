@@ -6,7 +6,7 @@ import org.w3c.dom.Element;
 public class AttributeFactory {
 
 	//see https://www.tutorialspoint.com/java_xml/java_dom_parse_document.htm
-	public IProductAttribute createAttribute(Element xmlElement){
+	public IProductAttribute createAttribute(Element xmlElement){  //FAACTTTOORRYYYYY
 		
 		return null;
 	}
